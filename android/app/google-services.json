@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "588310435881",
+    "firebase_url": "https://suraksha-b20ab.firebaseio.com",
+    "project_id": "suraksha-b20ab",
+    "storage_bucket": "suraksha-b20ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588310435881:android:87b38586bcc5c91050e438",
+        "android_client_info": {
+          "package_name": "falcons.suraksha_womensafety"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "588310435881-v8gj0idlgm4sdoefs2ll8jbhmnb9i5t3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzMrgJDTWSdm7YPSTWpUU1DeNrp1jGilY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "588310435881-v8gj0idlgm4sdoefs2ll8jbhmnb9i5t3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
