@@ -26,10 +26,12 @@ class Home extends StatelessWidget {
                     minHeight: 100.0,
                     minWidth: 100.0),
                 decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Colors.black,
-                    image: DecorationImage(
-                        image: AssetImage("./images/profile.jpg"))),
+                  shape: BoxShape.circle,
+                  color: Colors.black,
+                  image: DecorationImage(
+                    image: AssetImage("./images/profile.jpg"),
+                  ),
+                ),
                 // height: deviceHeight * 0.2,
               ),
               Container(

@@ -3,6 +3,8 @@ import 'package:suraksha_womensafety/Pages/TimerMain.dart';
 import '../Pages/GetSafeguide.dart';
 import '../Pages/SafeZone.dart';
 import '../Pages/helplineNumbers.dart';
+import '../Pages/video/youtube.dart';
+import '../Pages/video/video_list.dart';
 
 class Cards extends StatelessWidget {
   @override
@@ -25,13 +27,11 @@ class Cards extends StatelessWidget {
         height: cardHeight,
         padding: EdgeInsets.all(5.0),
         child: Card(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-          color: Colors.white,
-          child: Container(
-            child: Text('SOS'),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[Image.asset("images/sos.jpg"), Text("SOS")],
           ),
-          elevation: 7,
         ),
       ),
     );
@@ -59,13 +59,14 @@ class Cards2 extends StatelessWidget {
         height: cardHeight,
         padding: EdgeInsets.all(5.0),
         child: Card(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-          color: Colors.white,
-          child: Container(
-            child: Text('Safezone'),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Image.asset("images/safezone.jpg"),
+              Text("Safezone")
+            ],
           ),
-          elevation: 7,
         ),
       ),
     );
@@ -80,21 +81,27 @@ class Cards3 extends StatelessWidget {
     var cardWidth = 0.7 * deviceWidth;
     var cardHeight = 0.52 * deviceHeight;
     return FlatButton(
-        onPressed: (
-          
-        ){},
+      onPressed: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => VideoList(),
+          ),
+        );
+      },
       child: Container(
         width: cardWidth,
         height: cardHeight,
         padding: EdgeInsets.all(5.0),
         child: Card(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-          color: Colors.white,
-          child: Container(
-            child: Text('Learn'),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Image.asset("images/training.jpg"),
+              Text("FightBack")
+            ],
           ),
-          elevation: 7,
         ),
       ),
     );
@@ -109,26 +116,27 @@ class Cards4 extends StatelessWidget {
     var cardWidth = 0.7 * deviceWidth;
     var cardHeight = 0.52 * deviceHeight;
     return FlatButton(
-      onPressed: (){
-           Navigator.push(
+      onPressed: () {
+        Navigator.push(
           context,
           MaterialPageRoute(
             builder: (context) => GetSafeguide(),
           ),
         );
       },
-          child: Container(
+      child: Container(
         width: cardWidth,
         height: cardHeight,
         padding: EdgeInsets.all(5.0),
         child: Card(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-          color: Colors.white,
-          child: Container(
-            child: Text('Safeguide'),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Image.asset("images/safe guide.jpg"),
+              Text("Safe Guide")
+            ],
           ),
-          elevation: 7,
         ),
       ),
     );
@@ -143,8 +151,8 @@ class Cards5 extends StatelessWidget {
     var cardWidth = 0.7 * deviceWidth;
     var cardHeight = 0.52 * deviceHeight;
     return FlatButton(
-      onPressed: (){
-         Navigator.push(
+      onPressed: () {
+        Navigator.push(
           context,
           MaterialPageRoute(
             builder: (context) => TimerMain(),
@@ -156,13 +164,14 @@ class Cards5 extends StatelessWidget {
         height: cardHeight,
         padding: EdgeInsets.all(5.0),
         child: Card(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-          color: Colors.white,
-          child: Container(
-            child: Text('TimerHelp'),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Image.asset("images/timer.jpg"),
+              Text("TimerHelp")
+            ],
           ),
-          elevation: 7,
         ),
       ),
     );
@@ -177,26 +186,27 @@ class Cards6 extends StatelessWidget {
     var cardWidth = 0.7 * deviceWidth;
     var cardHeight = 0.52 * deviceHeight;
     return FlatButton(
-      onPressed: (){
-         Navigator.push(
+      onPressed: () {
+        Navigator.push(
           context,
           MaterialPageRoute(
             builder: (context) => HelplineNumbers(),
           ),
         );
       },
-          child: Container(
+      child: Container(
         width: cardWidth,
         height: cardHeight,
         padding: EdgeInsets.all(5.0),
         child: Card(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-          color: Colors.white,
-          child: Container(
-            child: Text('Helpline'),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Image.asset("images/helpline.jpg"),
+              Text("Helpline")
+            ],
           ),
-          elevation: 7,
         ),
       ),
     );
@@ -211,19 +221,20 @@ class Cards7 extends StatelessWidget {
     var cardWidth = 0.7 * deviceWidth;
     var cardHeight = 0.52 * deviceHeight;
     return FlatButton(
-      onPressed: (){},
-          child: Container(
+      onPressed: () {},
+      child: Container(
         width: cardWidth,
         height: cardHeight,
         padding: EdgeInsets.all(5.0),
         child: Card(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-          color: Colors.white,
-          child: Container(
-            child: Text('Report'),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Image.asset("images/report.jpg"),
+              Text("Report Complaint")
+            ],
           ),
-          elevation: 7,
         ),
       ),
     );
@@ -238,19 +249,20 @@ class Cards8 extends StatelessWidget {
     var cardWidth = 0.7 * deviceWidth;
     var cardHeight = 0.52 * deviceHeight;
     return FlatButton(
-        onPressed: (){},
-          child: Container(
+      onPressed: () {},
+      child: Container(
         width: cardWidth,
         height: cardHeight,
         padding: EdgeInsets.all(5.0),
         child: Card(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-          color: Colors.white,
-          child: Container(
-            child: Text('Chat"sakhi"'),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Image.asset("images/fembot.png"),
+              Text("Chat with Sakhi")
+            ],
           ),
-          elevation: 7,
         ),
       ),
     );

@@ -29,7 +29,7 @@ class SafeZone extends StatelessWidget {
                 width: 20,
               ),
               Text(
-                '1. VIPS, Pitampura',
+                '1. NCC Directorate Mumbai',
                 style: TextStyle(
                   fontWeight: FontWeight.w500,
                   fontSize: 15,
@@ -46,7 +46,7 @@ class SafeZone extends StatelessWidget {
                     borderRadius: new BorderRadius.circular(18.0),
                     side: BorderSide(color: Colors.blue)),
                 onPressed: () {
-                  openMap(28.7209, 77.1415);
+                  openMap(18.941525, 72.828381);
                 },
               ),
               SizedBox(
@@ -54,7 +54,7 @@ class SafeZone extends StatelessWidget {
                 width: 10,
               ),
               Text(
-                '2. CCD, Jail Road, Janak Puri',
+                '2.WIT Women India Trust',
                 style: TextStyle(
                   fontWeight: FontWeight.w500,
                   fontSize: 15,
@@ -71,7 +71,7 @@ class SafeZone extends StatelessWidget {
                     borderRadius: new BorderRadius.circular(18.0),
                     side: BorderSide(color: Colors.blue)),
                 onPressed: () {
-                  openMap(28.627108, 77.092111);
+                  openMap(19.036828, 72.846166);
                 },
               ),
               SizedBox(
@@ -79,7 +79,7 @@ class SafeZone extends StatelessWidget {
                 width: 10,
               ),
               Text(
-                '3. House of female volunteer, Hari Nagar',
+                '3. Maharashtra State Commission for Woman',
                 style: TextStyle(
                   fontWeight: FontWeight.w500,
                   fontSize: 15,
@@ -96,7 +96,7 @@ class SafeZone extends StatelessWidget {
                     borderRadius: new BorderRadius.circular(18.0),
                     side: BorderSide(color: Colors.blue)),
                 onPressed: () {
-                  openMap(28.6261245, 77.1065026);
+                  openMap(19.055199, 72.847580);
                 },
               ),
               SizedBox(
@@ -104,7 +104,7 @@ class SafeZone extends StatelessWidget {
                 width: 10,
               ),
               Text(
-                '4. House of female volunteer, Dwarka',
+                '4. Help Care Foundation',
                 style: TextStyle(
                   fontWeight: FontWeight.w500,
                   fontSize: 15,
@@ -121,7 +121,7 @@ class SafeZone extends StatelessWidget {
                     borderRadius: new BorderRadius.circular(18.0),
                     side: BorderSide(color: Colors.blue)),
                 onPressed: () {
-                  openMap(28.5823, 77.0500);
+                  openMap(19.061659, 72.836603);
                 },
               ),
               SizedBox(
@@ -129,7 +129,7 @@ class SafeZone extends StatelessWidget {
                 width: 10,
               ),
               Text(
-                '5. House of female volunteer, Nirman Vihar',
+                '5. Salvation Army Women Home',
                 style: TextStyle(
                   fontWeight: FontWeight.w500,
                   fontSize: 15,
@@ -146,7 +146,7 @@ class SafeZone extends StatelessWidget {
                     borderRadius: new BorderRadius.circular(18.0),
                     side: BorderSide(color: Colors.blue)),
                 onPressed: () {
-                  openMap(28.6350, 77.2872);
+                  openMap(19.033554, 72.859424);
                 },
               ),
               SizedBox(
