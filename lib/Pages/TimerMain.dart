@@ -10,7 +10,7 @@ class TimerMain extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.teal,
       ),
-      home: MyHomePage(title: 'Tap Page'),
+      home: MyHomePage(title: 'TimerHelp'),
     );
   }
 }
@@ -26,7 +26,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   static const duration = const Duration(seconds: 1);
 
-  int secondsPassed = 600;
+  int secondsPassed = 10;
   bool isActive = false;
   Timer timer;
 
@@ -147,11 +147,13 @@ class CustomTextContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: EdgeInsets.symmetric(horizontal: 5),
-        padding: EdgeInsets.all(20),
-        decoration: new BoxDecoration(
-            borderRadius: new BorderRadius.circular(10), color: Colors.black54),
-        child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
+      margin: EdgeInsets.symmetric(horizontal: 5),
+      padding: EdgeInsets.all(20),
+      decoration: new BoxDecoration(
+          borderRadius: new BorderRadius.circular(10), color: Colors.black54),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: <Widget>[
           Text(
             '$value',
             style: TextStyle(
@@ -161,6 +163,8 @@ class CustomTextContainer extends StatelessWidget {
               style: TextStyle(
                 color: Colors.white,
               ))
-        ]));
+        ],
+      ),
+    );
   }
 }

@@ -5,6 +5,7 @@ import '../Pages/SafeZone.dart';
 import '../Pages/helplineNumbers.dart';
 import '../Pages/video/youtube.dart';
 import '../Pages/video/video_list.dart';
+import '../Pages/reportCrime.dart';
 
 class Cards extends StatelessWidget {
   @override
@@ -221,7 +222,9 @@ class Cards7 extends StatelessWidget {
     var cardWidth = 0.7 * deviceWidth;
     var cardHeight = 0.52 * deviceHeight;
     return FlatButton(
-      onPressed: () {},
+      onPressed: () {
+        reportCrime();
+      },
       child: Container(
         width: cardWidth,
         height: cardHeight,
