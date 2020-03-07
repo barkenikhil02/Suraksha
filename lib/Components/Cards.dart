@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import '../Pages/SOS.dart';
 import 'package:suraksha_womensafety/Pages/TimerMain.dart';
 import '../Pages/GetSafeguide.dart';
 import '../Pages/SafeZone.dart';
 import '../Pages/helplineNumbers.dart';
-import '../Pages/video/youtube.dart';
 import '../Pages/video/video_list.dart';
 import '../Pages/reportCrime.dart';
 
@@ -16,12 +16,7 @@ class Cards extends StatelessWidget {
     var cardHeight = 0.52 * deviceHeight;
     return FlatButton(
       onPressed: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => TimerMain(),
-          ),
-        );
+        getsms();
       },
       child: Container(
         width: cardWidth,
