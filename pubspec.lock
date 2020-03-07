@@ -139,6 +139,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_dialogflow:
+    dependency: "direct main"
+    description:
+      name: flutter_dialogflow
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.3"
   flutter_sms:
     dependency: "direct main"
     description:
@@ -170,6 +177,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.2"
+  googleapis_auth:
+    dependency: transitive
+    description:
+      name: googleapis_auth
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.2.11+1"
   http:
     dependency: transitive
     description:

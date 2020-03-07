@@ -6,6 +6,7 @@ import '../Pages/SafeZone.dart';
 import '../Pages/helplineNumbers.dart';
 import '../Pages/video/video_list.dart';
 import '../Pages/reportCrime.dart';
+import '../Pages/Chatbot/dialog_flow.dart';
 
 class Cards extends StatelessWidget {
   @override
@@ -247,7 +248,14 @@ class Cards8 extends StatelessWidget {
     var cardWidth = 0.7 * deviceWidth;
     var cardHeight = 0.52 * deviceHeight;
     return FlatButton(
-      onPressed: () {},
+      onPressed: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => FlutterFactsChatBot(),
+          ),
+        );
+      },
       child: Container(
         width: cardWidth,
         height: cardHeight,

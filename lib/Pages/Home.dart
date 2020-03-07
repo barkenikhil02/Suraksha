@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:suraksha_womensafety/Components/Cards.dart';
 import 'package:suraksha_womensafety/Model/var.dart';
+import '../Components/Cards.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -12,8 +13,8 @@ class Home extends StatelessWidget {
     String name = 'Women';
     // print(deviceSize);
     return Column(
-     // crossAxisAlignment: CrossAxisAlignment.center,
-    //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      // crossAxisAlignment: CrossAxisAlignment.center,
+      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
         Container(
           margin: EdgeInsets.only(top: deviceHeight * 0.1),
@@ -35,14 +36,23 @@ class Home extends StatelessWidget {
                 // height: deviceHeight * 0.2,
               ),
               Container(
-                  padding: EdgeInsets.all(2.0),
-                  child: Text("Hello, $name",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 35.0,
-                        fontFamily: 'Roboto',
-                      )))
+                padding: EdgeInsets.all(2.0),
+                child: Text(
+                  "Hello, $name",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 35.0,
+                    fontFamily: 'Roboto',
+                  ),
+                ),
+              ),
+              FlatButton(
+                child: Text('Logout'),
+                color: Colors.white,
+                textColor: Colors.red,
+                onPressed: () {},
+              ),
             ],
           ),
         ),
