@@ -12,8 +12,8 @@ class Home extends StatelessWidget {
     String name = 'Women';
     // print(deviceSize);
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      // mainAxisAlignment: MainAxisAlignment.end,
+     // crossAxisAlignment: CrossAxisAlignment.center,
+    //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
         Container(
           margin: EdgeInsets.only(top: deviceHeight * 0.1),
@@ -56,15 +56,12 @@ class Home extends StatelessWidget {
                   fontFamily: 'Roboto')),
         ),
         Container(
-          // constraints:
-          // BoxConstraints(maxWidth: MediaQuery.of(context).size.width),
           child: SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Container(
                 margin: EdgeInsets.only(
                     left: deviceWidth * 0.12, right: deviceWidth * 0.1),
                 child: Row(
-                  // mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: <Widget>[
                     Cards(),
                     Cards2(),
