@@ -27,6 +27,7 @@ dependencies:
   firebase_auth: ^0.15.5+2
   url_launcher: ^5.4.2
   geolocator: ^5.3.0
+  youtube_player_flutter: ^6.0.3+2
 
 dev_dependencies:
   flutter_test:
@@ -47,6 +48,17 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - images/profile.jpg
+    - images/fembot.png
+    - images/helpline.jpg
+    - images/profile.jpg
+    - images/report.jpg
+    - images/safe guide.jpg
+    - images/safezone.jpg
+    - images/sos.jpg
+    - images/timer.jpg
+    - images/training.jpg
+
+    
 
  
   fonts:
