@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    var colorToBegin = Colors.orange;
+    var colorToBegin = Colors.red;
     var colorToEnd = Colors.deepOrange;
     return MaterialApp(
       home: Scaffold(
