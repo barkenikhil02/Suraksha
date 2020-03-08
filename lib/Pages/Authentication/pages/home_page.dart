@@ -18,14 +18,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _currentIndex = 0;
-
-  void onTabTapped(int index) {
-    setState(() {
-      _currentIndex = index;
-    });
-  }
-
   StreamSubscription<Event> _onTodoAddedSubscription;
   StreamSubscription<Event> _onTodoChangedSubscription;
 
@@ -106,7 +98,7 @@ class _HomePageState extends State<HomePage> {
     super.dispose();
   }
 
-  _signOut() async {
+  signOut() async {
     try {
       await widget.auth.signOut();
       widget.onSignedOut();
